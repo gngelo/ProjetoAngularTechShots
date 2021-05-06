@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": "dist\\techShots",
+    "appService.defaultWebAppToDeploy": "/subscriptions/fd4f5d51-b66e-48eb-8294-9847b3dc3b3b/resourceGroups/projeto-tech-shots/providers/Microsoft.Web/sites/projeto-tech-shots"
+}

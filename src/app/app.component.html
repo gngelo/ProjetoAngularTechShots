@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-dark bg-dark" >
+  <h5 class="my-0 mr-md-auto font-weight-normal text-light" [routerLink]="['/']">Tech Shots</h5>
+  <nav class="my-2 my-md-0 mr-md-3" >
+    <!-- <a class="p-2 text-light" [routerLink]="['login']">Logar</a> -->
+    <a class="p-2 text-light" [routerLink]="['cadastrar-usuarios']" *ngIf="mostrarCadUsu">Cadastrar-se</a>
+    <a class="p-2 text-light" [routerLink]="['cadastrar-techshots']" *ngIf="mostrarCriar">Criar</a>
+    <a class="p-2 text-light" [routerLink]="['votar-techshots']" *ngIf="mostrarVotar">Votar</a>
+    <a class="p-2 text-light" [routerLink]="['editar-techshots']" *ngIf="mostrarEditar">Editar</a>
+    <a class="p-2 text-light" [routerLink]="['listar-techshots']" *ngIf="mostrarListar">Estatística</a>
+              
+  </nav>
+  <a class="btn btn-outline-primary bg-dark" [routerLink]="['login']">Sair</a>
+</nav>
+
+<main>
+  <div class="container mt-5">  
+    <router-outlet></router-outlet>    
+  </div>
+</main>
+

@@ -1,0 +1,26 @@
+
+
+  
+
+<div class="container col-md-12 mt-5">
+        
+  <h4 class="text-center">Editar Tech Shots.</h4>                 
+  <div class="container col-md-12 mt-5">
+    <div class="row mt-3 bg-light " *ngFor="let tech of listatechshots">                 
+            
+      <div class="col-sm-3">
+        <p>Tech Shots nº: {{tech.Titulo_Tec}}</p>
+      </div>
+      <div class="col-sm-6">
+        <p>{{tech.Descricao_Tec}}</p>
+      </div>
+      <div class="col-sm-3 text-right">
+        <button type="button" class="btn btn-warning mr-2" (click)="editarTechShot()">Editar</button>
+        <button type="button" class="btn btn-danger" (click)="apagarTechShot()">Apagar</button>
+      </div>    
+
+    </div>                                   
+  </div>          
+</div>
+
+  
